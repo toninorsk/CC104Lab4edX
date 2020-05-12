@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CC104 Lab4 edX</title>
+    <link rel="stylesheet" href="CC104LabedX.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <ul>
+        <li class=" dropdown">
+            <a href="javascript:void(0)" class=" dropbtn"><img src="menu-bar-icon.png" alt="menu-bar-icon"
+                    width="30px"></a>
+            <div class="dropdown-content">
+                <a href="#">
+                    <div style="background-color: #242c3c; color: white;"> Hello, Sign in </div>
+                </a>
+                <a href="">Dashboard</a>
+                <a href="">Courses</a>
+                <a href="">Programs</a>
+                <a href="">Online Master's Degrees</a>
+                <a href="">Schools & Partners</a>
+                <a href="">edX for Business</a>
+                <a href="">Profile</a>
+                <a href="">Account</a>
+                <a href="">Sign Out</a>
+            </div>
+        </li>
+        <li class=" logo"><a href="https://www.edx.com/" class=" logo"><img src="edx-icon.png" alt="edX-logo"
+                    width="100px"></a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#program&degree">Programs & Degrees</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </li>
+        <li><a href="#school&partners">School & Partners edX for Business</a></li>
+        <li><a href="#"><input type="text" placeholder="Search.."></a></li>
+    </ul>
+
+    <div class="w3-content w3-display-container">
+
+        <div class="w3-display-container mySlides">
+            <img src="edX1.jpg" style="width:100%">
+            <!-- <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                Express Delivery
+            </div> -->
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="edX2.jpg" style="width:100%">
+            <!-- <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                Not Plasic Fantastic!
+            </div> -->
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="edX3.jpg" style="width:100%">
+            <!-- <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                Summer Volley Festival
+            </div> -->
+        </div>
+
+        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+    <div style="background-color: lightblue;">
+        <p style=" color: rgb(0, 100, 230); font-family: sans-serif; font-size: 1.1em;">What do you want to learn?</p>
+        <div><input size="200" type="text" placeholder="" style="border-radius: 25px;"></div>
+        <hr>
+    </div>
+
+    <div><img src="banner-edx.jpg" alt="university" width="100%"></div>
+
+    <h2>Popular Subjects</h2>
+
+    <div class="responsive">
+        <div class="gallery">
+            <div class="desc"><b> Computer Science </b></div>
+            <a target="_blank" href="CS.jpg">
+                <img src="CS.jpg" alt="CS" width="600" height="400">
+            </a>
+            <div class="desc"><table>
+                
+                    <tr><td>Azure</td></tr>
+                    <tr><td>Blockchain</td></tr>
+                    <tr><td>C Programing</td></tr>
+                    <tr><td>Devops</td></tr>
+                    <tr><td>Django</td></tr>
+                    <tr><td>Full Stack Development</td></tr>
+                    <tr><td>Html</td></tr>
+                    <tr><td>Java</td></tr>
+                    <tr><td>JavaScript</td></tr>
+                    <tr><td>Python</td></tr>
+                
+            </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="responsive">
+        <div class="gallery">
+            <div class="desc"><b>Engineering</b></div>
+            <a target="_blank" href="Engineering.jpg">
+                <img src="Engineering.jpg" alt="Engineering" width="600" height="400">
+            </a>
+            <div class="desc"><table>
+                <tr><td>Aerospace Engineering</td></tr>
+                <tr><td>Biomedical Engineering</td></tr>
+                <tr><td>Chemical Engineering</td></tr>
+                <tr><td>Civil Engineering</td></tr>
+                <tr><td>Computer Engineering</td></tr>
+                <tr><td>Electrical Engineering</td></tr>
+                <tr><td>Industry Engineering</td></tr>
+                <tr><td>Medical Engineering</td></tr>
+                <tr><td>Software Engineering</td></tr>
+                <tr><td>Structural Engineering</td></tr>
+            </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <div class="desc"><b> Languages </b></div>
+            <a target="_blank" href="Linguistics.png">
+                <img src="Linguistics.png" alt="Linguistics" width="600" height="400">
+            </a>
+            <div class="desc"><table>
+                <tr><td>Chinese</td></tr>
+                <tr><td>English</td></tr>
+                <tr><td>ESL</td></tr>
+                <tr><td>Grammar</td></tr>
+                <tr><td>Italian</td></tr>
+                <tr><td>Japanese</td></tr>
+                <tr><td>Mandarin</td></tr>
+                <tr><td>Sign Language</td></tr>
+                <tr><td>Spanish</td></tr>
+                <tr><td>Writing</td></tr>
+            </table></div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <div class="desc"><b>Business and Management</b></div>
+            <a target="_blank" href="Business.jpg">
+                <img src="Business.jpg" alt="Business" width="600" height="400">
+            </a>
+            <div class="desc">
+                <table>
+                    <tr><td>Business Administration</td></tr>
+                    <tr><td>Business Analysis</td></tr>
+                    <tr><td>Corporate Finance</td></tr>
+                    <tr><td>Economics</td></tr>
+                    <tr><td>Entrepreneurship</td></tr>
+                    <tr><td>Finance</td></tr>
+                    <tr><td>Financial Literacy</td></tr>
+                    <tr><td>Leadership</td></tr>
+                    <tr><td>Project Management</td></tr>
+                    <tr><td>Statistics</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div id="main">
+        <div>
+            <ul>
+                <li><img src="edx-icon.png" alt="edx-icon" width="100px"></li>
+            </ul>
+        </div>
+        <div>
+           <table>
+               <tr><td>edX</td></tr>
+               <tr><td style="color: white;">.</td></tr>
+               <tr><td style="color: rgb(0, 100, 230);">About</td></tr>
+               <tr><td style="color: rgb(0, 100, 230);">edX for Business</td></tr>
+               <tr><td style="color: rgb(0, 100, 230);">Affiliates</td></tr>
+               <tr><td style="color: rgb(0, 100, 230);">Open edX</td></tr>
+               <tr><td style="color: rgb(0, 100, 230);">Careers</td></tr>
+               <tr><td style="color: rgb(0, 100, 230);">News</td></tr>
+           </table>
+        </div>
+        <div>
+            <table>
+                <tr><td>Legal</td></tr>
+                <tr><td style="color: white;">.</td></tr>
+                <tr><td style="color: rgb(0, 100, 230);">Terms of Service & Honor</td></tr>
+                <tr><td style="color: rgb(0, 100, 230);">Code</td></tr>
+                <tr><td style="color: rgb(0, 100, 230);">Privacy Policy</td></tr>
+                <tr><td style="color: rgb(0, 100, 230);">Accessibility Policy</td></tr>
+                <tr><td style="color: rgb(0, 100, 230);">Sitemap</td></tr>
+            </table>
+        </div>
+        <div>
+            <table>
+                <tr><td>Connect</td></tr>
+                <tr><td style="color: white;">.</td></tr>
+                <tr><td style="color: rgb(0, 100, 230);">Blog</td></tr>
+                <tr><td style="color: rgb(0, 100, 230);">Contact Us</td></tr>
+                <tr><td style="color: rgb(0, 100, 230);">Help Center</td></tr>
+                <tr><td style="color: rgb(0, 100, 230);">Media Kit</td></tr>
+                <tr><td style="color: rgb(0, 100, 230);">Donate</td></tr>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
